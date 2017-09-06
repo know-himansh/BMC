@@ -1,4 +1,4 @@
-import org.kohsuke.github.GHRepository;
+mport org.kohsuke.github.GHRepository;
 
 import org.kohsuke.github.GHRepository.Contributor;
 
@@ -12,7 +12,7 @@ import java.util.Collection;
 
 
 
-public class Foo {
+public class getfile {
 
     public static void main(String[] args) throws Exception {
 
