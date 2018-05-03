@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><tns:config xmlns:tns="http://www.bmc.com/arsys/tests/framework/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bmc.com/arsys/tests/framework/config ../Base/src/main/resources/run.config.xsd ">
+
+  <!-- User information in order to connect to test servers -->
+
+  <userInfo>
+
+     <username>Demo</username>
+
+     <password/>
+
+     <auth/>
+
+     <locale>en_US</locale>
+
+  </userInfo>
+
+  <report save="false">
+
+     <userInfo>
+
+        <username>qa-tester</username>
+
+        <password>qa-tester</password>
+
+        <auth/>
+
+        <locale/>
+
+     </userInfo>
+
+     <reportServer name="autodb" rpc="0" tcp="0"/>
+
+     <runType>4</runType>
+
+     <productId>SHGCBGJHIZXLVAOP2AEBOO5ZTC0HFQ</productId>
+
+     <runName>Devops-Ci</runName>
+
+     <dropName>test-devops</dropName>
+
+  </report>
+
+  <!-- Testing servers -->
+
+  <testServer dbadmin="oo" dbpassword="nn" name="localhost" rpc="0" tcp="8080"/>
+
+  <!-- Base directory where the data files are located -->
+
+  <dataDir>src/main/java</dataDir>
+
+  <!-- Controls whether or not to import/create test data when setting up the test -->
+
+  <importTestData>true</importTestData>
+
+  <!-- Controls whether or not to cleanup/delete test data when tearing down the test -->
+
+  <cleanupTestData>true</cleanupTestData>
+
+  <testEmailEngine>
+
+     <smtpServer>10.128.88.167</smtpServer>
+
+     <smtpPort>425</smtpPort>
+
+     <smtpUser>auto3@remex10.local</smtpUser>
+
+     <smtpUserPassword>Asimil8</smtpUserPassword>
+
+     <incomingUserOfEE>auto1@remex10.local</incomingUserOfEE>
+
+     <dumpEEResponse>false</dumpEEResponse>
+
+  </testEmailEngine>
+
+  <testMidtier>
+
+     <scheme>http</scheme>
+
+     <hostname>qadel2k3452</hostname>
+
+     <port>8080</port>
+
+     <rootPath>uiframework</rootPath>
+
+     <loginPath>shared/login.jsp</loginPath>
+
+     <errorPath>shared/error.jsp</errorPath>
+
+     <configPath>shared/config/config.jsp</configPath>
+
+     <browserType>firefox</browserType>
+
+     <defaultTimeOut>firefox</defaultTimeOut>
+
+  </testMidtier>
+
+</tns:config>
